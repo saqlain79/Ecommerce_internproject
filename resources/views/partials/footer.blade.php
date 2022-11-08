@@ -2,41 +2,31 @@
 <div class="container">
 <div class="row">
 <div class="col-lg-2 col-md-6 single-footer-widget">
-<h4>Top Products</h4>
+<h4>Customer Care</h4>
 <ul>
-<li><a href="#">Managed Website</a></li>
-<li><a href="#">Manage Reputation</a></li>
-<li><a href="#">Power Tools</a></li>
-<li><a href="#">Marketing Service</a></li>
+<li><a href="#">How to buy</a></li>
+<li><a href="#">Returns & Refunds</a></li>
+<li><a href="#">Terms & Conditions</a></li>
 </ul>
 </div>
 <div class="col-lg-2 col-md-6 single-footer-widget">
-<h4>Quick Links</h4>
+<h4>Earn</h4>
 <ul>
-<li><a href="#">Jobs</a></li>
-<li><a href="#">Brand Assets</a></li>
-<li><a href="#">Investor Relations</a></li>
-<li><a href="#">Terms of Service</a></li>
+<li><a href="#">Sell online</a></li>
+<li><a href="#">Code of Conduct</a></li>
+
 </ul>
 </div>
 <div class="col-lg-2 col-md-6 single-footer-widget">
-<h4>Features</h4>
+<h4>Ecommerce</h4>
 <ul>
-<li><a href="#">Jobs</a></li>
-<li><a href="#">Brand Assets</a></li>
-<li><a href="#">Investor Relations</a></li>
-<li><a href="#">Terms of Service</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Payments</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Privacy Policy</a></li>
 </ul>
 </div>
-<div class="col-lg-2 col-md-6 single-footer-widget">
-<h4>Resources</h4>
-<ul>
-<li><a href="#">Guides</a></li>
-<li><a href="#">Research</a></li>
-<li><a href="#">Experts</a></li>
-<li><a href="#">Agencies</a></li>
-</ul>
-</div>
+
 <div class="col-lg-4 col-md-6 single-footer-widget">
 <h4>Newsletter</h4>
 <p>You can trust us. we only send promo offers,</p>
@@ -54,7 +44,7 @@
 </div>
 <div class="footer-bottom row align-items-center">
 <p class="footer-text m-0 col-lg-8 col-md-12">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 </p>
 <div class="col-lg-4 col-md-12 footer-social">
 <a href="#"><i class="fa fa-facebook"></i></a>
