@@ -10,7 +10,7 @@ class CatagoryController extends Controller
 public function show_table()
 {
     $catagories= Catagory::all();
-    return view('table', ['catagories'=>$catagories]);
+    return view('admin/dashpages/table', ['catagories'=>$catagories]);
 }
 public function create_catagory()
 {
@@ -25,7 +25,7 @@ public function store_catagory(Request $request)
     $catagory= new Catagory;
     $catagory->name=$request->name;
     $catagory->save();
-    return redirect('/')->with('message', 'Success');
+    return redirect('/show_table')->with('message', 'Success');
 }
 public function edit_catagory($id)
 {

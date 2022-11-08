@@ -21,6 +21,8 @@ Route::get('/contactus', [HomeController::class ,'contact_us']);
 
 Route::get('/show_table', [CatagoryController::class,'show_table']);
 
+Route::get('/admin', [HomeController::class, 'admin_dashboard']);
+
 Route::get('/create_catagory', [CatagoryController::class, 'create_catagory']);
 
 Route::get('/store_catagory', [CatagoryController::class, 'store_catagory']);

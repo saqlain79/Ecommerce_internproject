@@ -14,4 +14,8 @@ class HomeController extends Controller
     {
         return view ('pages.contact');
     }
+    public function admin_dashboard()
+    {
+        return view ('admin.dashboard');
+    }
 }
