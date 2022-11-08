@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="admin_resource/assets/css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="admin_resource/assets/images/favicon.png" />
+
+    <style type = "text/css">
+
+
+
+    </style>
   </head>
   <body>
     <div class="container-scroller">
@@ -51,29 +57,33 @@
         <!-- partial -->
 
 
-     <div class="main-panel">
-       <div class="content-wrapper">
-        <div class="container pt-5">
-            <h2>Edit Catagory</h2>
-            <div class="row">
-                <div class="col-sm-4">
-                    <form method="post" action="/update_catagory/{{$catagory->id}}">
-                        @csrf
-                        @method('put')
-                        <label for="">Name</label>
-                        <input type="text" name="name" class="form-control"
-                        value="{{$catagory->name}}">
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="container pt-5">
+                <h2>Edit Catagory</h2>
 
-                        <button class="btn btn-info mt-4" type="submit">Update</button>
 
-                    </form>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <form method="post" action="/update_catagory/{{$catagory->id}}">
+                            @csrf
+                            @method('put')
+                            <label for="">Name</label>
+                            <input type="text" name="name" class="form-control"
+                            value="{{$catagory->name}}">
+
+                            <button class="btn btn-info mt-4" type="submit">Update</button>
+
+                        </form>
+                    </div>
                 </div>
-            </div>
 
+
+            </div>
 
         </div>
     </div>
-</div>
 
 
         <!-- main-panel ends -->
