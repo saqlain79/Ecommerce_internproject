@@ -14,7 +14,7 @@ public function show_table()
 }
 public function create_catagory()
 {
-    return view('new');
+    return view('admin.dashpages.createcatagories');
 }
 public function store_catagory(Request $request)
 {
@@ -30,18 +30,18 @@ public function store_catagory(Request $request)
 public function edit_catagory($id)
 {
     $catagory=Catagory::where('id',$id)->first();
-    return view('edit', compact('catagory'));
+    return view('admin.dashpages.editcatagories', compact('catagory'));
 }
 public function update_catagory(Request $request, $id)
 {
     $catagory= Catagory::where('id',$id)->first();
     $catagory->name=$request->name;
     $catagory->save();
-    return redirect ('/');
+    return redirect ('/show_table');
 }
 public function delete_catagory($id)
 {
     $catagory=Catagory::where('id',$id)->delete();
-    return redirect('/');
+    return redirect('/show_table');
 }
 }
