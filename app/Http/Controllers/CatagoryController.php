@@ -18,10 +18,11 @@ public function create_catagory()
 }
 public function store_catagory(Request $request)
 {
-    //validate
-    // $validated = $request->validate([
-    //     'title'=> 'required|unique:catagories|max:200',
-    // ]);
+    // validate
+    $validated = $request->validate([
+        'title'=> 'required|unique:catagories|max:200',
+        'body' => 'required',
+    ]);
     $catagory= new Catagory;
     $catagory->name=$request->name;
     $catagory->save();

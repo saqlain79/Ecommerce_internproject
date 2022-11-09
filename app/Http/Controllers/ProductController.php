@@ -19,9 +19,10 @@ class ProductController extends Controller
 public function store_product(Request $request)
 {
     //validate
-    // $validated = $request->validate([
-    //     'title'=> 'required|unique:catagories|max:200',
-    // ]);
+    $validated = $request->validate([
+        'title'=> 'required|unique:catagories|max:200',
+        'body' => 'required',
+    ]);
     $product= new Product;
     $product->title=$request->title;
     $product->description=$request->description;
@@ -29,8 +30,13 @@ public function store_product(Request $request)
     $product->price=$request->price;
     $product->catagory=$request->catagory;
 
+    $image=$request->image;
+    $imagename=time().'.'.$image->getClientOriginalExtension;
+    $request->image->move('product', $imagename);
+    $product->image=$imagename;
+
     $product->save();
-    return redirect('/show_product');
+    return redirect()->back();
 }
 public function edit_product($id)
 {

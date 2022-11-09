@@ -51,16 +51,31 @@
         <!-- partial -->
 
 
+        <div class = "main-panel">
+            <div class = "content-wrapper">
+                <div class = "container pt-5">
+                    <h2>Product Table <a class = "btn btn-info" href="/create_product"></a></h2>
+                    <table class = "table">
+                        <thead>
+                            <tr>
+                                <th>Serial</th>
+                                <th>Product Title</th>
+                                <th>Product Description</th>
+                                <th>Product image</th>
+                                <th>Catagory</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{$loop->index+1}}</td>
+                                <td>{{$product->title}}</td>
+                            </tr>
+                        </tbody>
 
-        <div class="main-panel">
-            <div class="content-wrapper">
-
-
-
-
-
-
-
+                    </table>
+                </div>
             </div>
         </div>
 
