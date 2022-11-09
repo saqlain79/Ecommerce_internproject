@@ -19,6 +19,7 @@ class ProductController extends Controller
 }
 public function store_product(Request $request)
 {
+
     //validate
     // $validated = $request->validate([
     //     'title'=> 'required|unique:catagories|max:200',
@@ -32,7 +33,7 @@ public function store_product(Request $request)
     $product->catagory=$request->catagory;
 
     $image=$request->image;
-    $imagename=time().'.'.$image->getClientOriginalExtension;
+    $imagename=time().'.'.$image->getClientOriginalExtension();
     $request->image->move('product', $imagename);
     $product->image=$imagename;
 
