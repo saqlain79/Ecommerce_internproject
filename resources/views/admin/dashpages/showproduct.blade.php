@@ -54,11 +54,10 @@
         <div class = "main-panel">
             <div class = "content-wrapper">
                 <div class = "container pt-5">
-                    <h2>Product Table <a class = "btn btn-info" href="/create_product"></a></h2>
+                    <h2>Product Table <a class = "btn btn-info" href="/create_product">New Product</a></h2>
                     <table class = "table">
                         <thead>
                             <tr>
-                                <th>Serial</th>
                                 <th>Product Title</th>
                                 <th>Product Description</th>
                                 <th>Product image</th>
@@ -67,12 +66,22 @@
                                 <th>Price</th>
                             </tr>
                         </thead>
+                        @foreach ($product as $product )
+
                         <tbody>
                             <tr>
-                                <td>{{$loop->index+1}}</td>
                                 <td>{{$product->title}}</td>
+                                <td>{{$product->description}}</td>
+                                <td>{{$product->image}}</td>
+                                <td>{{$product->catagory}}</td>
+                                <td>{{$product->quantity}}</td>
+                                <td>{{$product->price}}</td>
+
+
                             </tr>
                         </tbody>
+
+                        @endforeach
 
                     </table>
                 </div>

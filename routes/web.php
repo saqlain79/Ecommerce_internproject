@@ -38,7 +38,7 @@ Route::get('/show_product', [ProductController::class, 'show_product']);
 
 Route::get('/create_product', [ProductController::class, 'create_product']);
 
-Route::get('/store_product', [ProductController::class, 'store_product']);
+Route::post('/store_product', [ProductController::class, 'store_product']);
 
 Route::get('/edit_product', [ProductController::class, 'edit_product']);
 

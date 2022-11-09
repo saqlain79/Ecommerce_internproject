@@ -9,7 +9,8 @@ class ProductController extends Controller
 {
     public function show_product()
     {
-       return view ('admin.dashpages.showproduct');
+        $product=product::all();
+       return view ('admin.dashpages.showproduct', compact('product'));
 
     }
     public function create_product()
@@ -19,10 +20,10 @@ class ProductController extends Controller
 public function store_product(Request $request)
 {
     //validate
-    $validated = $request->validate([
-        'title'=> 'required|unique:catagories|max:200',
-        'body' => 'required',
-    ]);
+    // $validated = $request->validate([
+    //     'title'=> 'required|unique:catagories|max:200',
+    //     'body' => 'required',
+    // ]);
     $product= new Product;
     $product->title=$request->title;
     $product->description=$request->description;

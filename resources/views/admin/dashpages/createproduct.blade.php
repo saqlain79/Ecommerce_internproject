@@ -72,17 +72,17 @@
             <h1>New Product</h1>
             <div class="row">
                 <div class="col-sm-4">
-                    <form method="" action="/store_product" enctype="multipart/form-data">
+                    <form method="Post" action="/store_product" enctype="multipart/form-data">
                         @csrf
 
                         <div>
                         <label for="">Title</label>
-                        <input class= "text_color" type="text" title="title" class="form-control" placeholder="Write a Title" required="" value={{old('title')}}>
+                        <input class= "text_color" type="text" name="title" class="form-control" placeholder="Write a Title" required="" value={{old('title')}}>
                         </div>
 
                         <div>
                         <label for="">Description</label>
-                        <input class= "text_color" type="text" title="description" class="form-control"
+                        <input class= "text_color" type="text" name="description" class="form-control"
                         placeholder="Write a Description" required="" value={{old('description')}}>
                         </div>
 
@@ -90,28 +90,29 @@
 
                         <div>
                             <label for="">Catagory</label>
-                            <select class = "text_color" title = "catagory" required="">
-                                <option value="" selected="">Select a catagory</option>
-                                <option value="">Shirt</option>
+                            <select class = "text_color" name = "catagory" required="">
+                                <option value="" selected>Select a catagory</option>
+                                <option value="shirt">Shirt</option>
+                                <option value="pant">Pant</option>
                             </select>
                         </div>
 
                         <div>
                         <label for="">Quantity</label>
                         <input class= "text_color" type="number"
-                        min="0" title="quantity" class="form-control" placeholder="Give Quantity" required=""
+                        min="0" name="quantity" class="form-control" placeholder="Give Quantity" required=""
                         value={{old('quantity')}}>
                         </div>
 
                         <div>
                         <label for="">Price</label>
-                        <input class= "text_color" type="number" title="price" class="form-control" placeholder="Put Price" required=""
+                        <input class= "text_color" type="number" name="price" class="form-control" placeholder="Put Price" required=""
                         value={{old('price')}}>
                         </div>
 
                         <div>
                             <label for="">Image</label>
-                            <input type = "file" title= "image" required="">
+                            <input type = "file" class = "form-control" name= "image" >
                         </div>
 
                         <button class="btn btn-info mt-4">Submit</button>
